@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <Title> Login Page & Registration Page </Title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+   <div class="container">
+    <p style="background-image: url('lebron2.gif');">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="class card-front">
+                    <h2>Login</h2>
+                    <form>
+                        <input type="email" class="input-box" placeholder="your email id" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openRegister()">Im new here</button>
+                    <a href="https://youtube.com/shorts/bu2Jf2sHjbE?feature=share">forgot password</a>
+                </div>
+                <div class="card-back"><h2>Register</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="your name" required>
+                        <input type="email" class="input-box" placeholder="your email id" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">I have an acc</button>
+                    <a href="">forgot password</a></div>
+            </div>
+        </div>
+   </div>
+
+    <script>
+
+        var card = document.getElementById ("card");
+        function openRegister(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)";   
+            
+        }
+
+        
+    </script>
+
+    
+
+
+
+
+
+
+
+</html>
